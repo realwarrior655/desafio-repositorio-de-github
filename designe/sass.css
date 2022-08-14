@@ -1,0 +1,186 @@
+/* --------------------normalize----------------------------- */
+* {
+  background-color: dark;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------------- box modeling --------------------*/
+.titles {
+  color: #fca311;
+  text-align: center;
+  text-shadow: 3px 3px 10px #1f2788;
+  font-size: 2rem;
+  color: #2b2d42;
+  display: online;
+}
+
+.suscribe, .tapToTop {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+nav {
+  background-color: #14213d;
+}
+nav div {
+  background-color: #14213d;
+}
+nav button a img {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 2rem;
+}
+
+img {
+  background-color: transparent;
+}
+
+div form, article {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.parrafe {
+  color: #e5e5e5;
+  margin: 10px 10px;
+  padding: 15px;
+  background-color: #14213d;
+  border: 3px solid #fca311;
+  box-shadow: 5px 3px 10px #2b2d42;
+}
+
+.formulario {
+  margin: 20px 0;
+  border: 3px solid #2b2d42;
+  background-color: #2a9d8f;
+  box-shadow: 5px 3px 10px #2b2d42;
+}
+
+label {
+  margin: 10px;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.footer {
+  color: #2b2d42;
+  background-color: #14213d;
+  padding-top: 20px;
+}
+
+/* -----------estructura en grid para todos los html (FIRST MOVILE)------------- */
+header {
+  grid-area: header;
+}
+
+.suscribe {
+  grid-area: suscribeButton;
+}
+
+.articulo1 {
+  grid-area: mainArticle;
+}
+
+articulo2 {
+  grid-area: optativeArticle;
+}
+
+body div {
+  grid-area: bodyDiv;
+}
+
+.tapToTop {
+  grid-area: toTopButton;
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 1rem;
+  grid-template-areas: "header" "suscribeButton" "mainArticle" "optativeArticle" "bodyDiv" "toTopButton" "footer";
+}
+
+/* -------------------- media query para tablet-------------------- */
+@media (min-width: 600px) {
+  /* -----------box-modeling tablet---------------------- */
+  .titles {
+    color: #fca311;
+    text-align: start;
+    padding: 2rem 0;
+    text-shadow: 3px 3px 10px #1f2788;
+    font-size: auto;
+    display: online;
+  }
+  .suscribe, .tapToTop {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  nav {
+    background-color: #14213d;
+  }
+  nav div {
+    background-color: #14213d;
+  }
+  nav button {
+    display: flex;
+    align-items: center;
+  }
+  nav a {
+    background-color: transparent;
+  }
+  nav img {
+    background-color: transparent;
+  }
+  div form, article {
+    width: 100%;
+    text-align: center;
+  }
+  .parrafe {
+    color: #e5e5e5;
+    margin: 20px 30px;
+    padding: 15px;
+    background-color: #14213d;
+    border: 3px solid #fca311;
+    box-shadow: 5px 3px 10px #2b2d42;
+  }
+  .formulario {
+    margin: 20px -5px;
+    border: 3px solid #fca311;
+    background-color: #14213d;
+    box-shadow: 5px 3px 10px #2b2d42;
+  }
+  label {
+    color: #fca311;
+    margin: 10px;
+    font-size: 20px;
+    background-color: transparent;
+  }
+  .footer {
+    color: #2b2d42;
+    background-color: #14213d;
+    padding-top: 20px;
+  }
+  /* ----------------------- GRID de tablet + desktop----------------------- */
+  body {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: "header         header" "suscribeButton suscribeButton " "mainArticle    optativeArticle" "bodyDiv        bodyDiv" "toTopButton    toTopButton" "footer         footer";
+  }
+}
+/* pense que iba a necesitar una mediaquery mas, pero vi que me quedo bien con dos columnas, me parecio innecesario agregarla *//*# sourceMappingURL=sass.css.map */

@@ -5,47 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="designe/designe.css">
+    <link rel="stylesheet" type="text/css" href="designe/sass.css">
     <link rel="stylesheet" type="text/css" href="designe/normalizeg.css">
     <link rel="shortcut icon" href="Images/iconos/favicon.png">
+
+    <!-- CDN de bootstrap para CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Codify</title>
 </head>
 
-<body>
-    <header> 
+<body class="bg-secondary">
+    <!-- header + navbar de la pagina -->
 
-        <!-- titulo + barra de navegacion -->
+    <header id="tapToTop" class="row">
 
-        <div id="tapToTop">
-            <h1 class="titles"><img src="Images/iconos/favicon.png">Codify </h1>
-        <nav class="nav">|
-            <ul class="ul">
-                <li>
-                    <a href="index.html"><img src="images/iconos/inicio.png" title="inicio"></a>
-                </li>
-                <li>
-                    <a href="secciones/miPerfil.html"><img src="images/iconos/miPerfil.png"
-                            title="Mi Perfil" alt="Mi Perfil"></a>
-                </li>
-                <li>
-                    <a href="secciones/favoritos.html"><img src="images/iconos/favoritos.png"
-                            title="Favoritos" alt="Favoritos"></a>
-                </li>
-                <li>
-                    <a href="secciones/novedades.html"><img src="images/iconos/novedades.png"
-                            title="Novedades" alt="Novedades"></a>
-                </li>
-                <li>
-                    <a href="secciones/Nosotros.html"><img src="images/iconos/nosotros.png"
-                            title="Nosotros" alt="Nosotros"></a>
-                </li>
-                <li>
-                    <a href="secciones/settings.html"><img src="images/iconos/settings.png"
-                            title="configuracion" alt="Configuración"></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+        <nav  class="row navbar">
+
+            <div class="col-5 justify-content-start">
+
+                <button class="btn btn-outline-warning mx-4" title="codify"><a class="bg-dark" href="index.html"><img class="favicon" src="images/iconos/favicon.png"alt="icono de codify" width="30" height="30"></a></button>
+
+            </div>
+
+        <div class="container col-7 justify-content-end">
+
+            <form class="row pe-1 justify-content-end">
+
+               <button class="col-xl-1 btn btn-outline-warning me-2 ps-3" type="button" title="Profile"><a class="bg-dark" href="secciones/miPerfil.html"><img alt="profile" src="images/iconos/miPerfil.png" width="32px" height="32px"></a></button>
+
+               <button class="col-xl-1 btn btn-outline-warning me-2 ps-3" type="button" title="Favs"><a class="bg-dark" href="secciones/favoritos.html"><img alt="favoritos" src="images/iconos/favoritos.png" width="32px" height="32px"></a></button>
+
+               <button class="col-xl-1 btn btn-outline-warning me-2 ps-3" type="button" title="about us"><a class="bg-dark" href="secciones/nosotros.html"><img alt="About us" src="images/iconos/nosotros.png" width="32px" height="32px"></a></button>
+
+               <button class="col-xl-1 btn btn-outline-warning me-2 ps-3" type="button" title="News"><a class="bg-dark" href="secciones/novedades.html"><img  alt="News" src="images/iconos/novedades.png" width="32px" height="32px"></a></button>
+
+               <button class="col-xl-1 btn btn-sm btn-outline-warning ps-3" type="button" title="Settings"><a class="bg-dark" href="secciones/settings.html"><img src="images/iconos/settings.png" width="32px" height="32px" alt="ajustes"></a></button>
+            
+            </form>
+        </div>
+
+      </nav>
+
     </header>
 
     <!-- link directo al formulario de suscripcion -->
@@ -152,6 +153,10 @@
 		<h3>CONTACTO</h3>
 
 	</footer>
+
+    <!-- CDN de bootstrap para JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
