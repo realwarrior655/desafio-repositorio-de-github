@@ -15,7 +15,7 @@
     <title>Codify: Nosotros</title>
 </head>
 
-<body class="bg-secondary">
+<body class="bg-dark">
     <!-- header + navbar de la pagina -->
 
     <header id="tapToTop" class="row">
@@ -48,6 +48,14 @@
       </nav>
 
     </header>
+
+        <!-- link directo al formulario de suscripcion -->
+
+        <div class="suscribe">
+        
+            <a href="#footer" class="btn btn-outline-warning text-decoration-none" title="llena nuestro formulario para recibir las mejores noticias del mundo de la programación">te dejamos nuestras redes sociales</a>
+    
+        </div>
    
     <section>
         <h3 class="titles"> about us</h3>
@@ -111,12 +119,22 @@
 
     <!-- botos hacia el inicio de la pagina -->
 
-    <a href="#tapToTop" class="tapToTop"><img src="../images/tapToTop.png" title="back to top" alt="back to top"></a>
+    <a href="#tapToTop" class="tapToTop"><img src="../images/tapToTop.png" class="btn btn-outline-warning text-decoration-none" title="back to top" alt="back to top"></a>
     
-    <footer class="footer">
-		<h3>LOGO</h3>
-		<h3>RRSS</h3>
-		<h3>CONTACTO</h3>
+    <footer class="footer" id="footer">
+
+        <form class="row pe-1 justify-content-center">
+
+            <button class="col-xl-1 btn btn-light mx-5 mb-2 mt-1 ps-3" type="button" title="FaceBook"><a class="bg-dark" href="https://www.facebook.com/ivan.bazan.165" target="_blank"><img alt="profile" src="../images/iconosFooter/facebook.gif" width="35px" height="35px"></a></button>
+
+            <button class="col-xl-1 btn btn-light mx-5 mb-2 mt-1 ps-3" type="button" title="Instagram"><a class="bg-dark" href="https://www.instagram.com/ivo_bazan_sw/" target="_blank"><img alt="favoritos" src="../images/iconosFooter/instagram.gif" width="35px" height="35px"></a></button>
+
+            <button class="col-xl-1 btn btn-light mx-5 mb-2 mt-1 ps-3" type="button" title="LinkedIn"><a class="bg-dark" href="https://www.linkedin.com/in/ivan-bazan-a77a46195/" target="_blank"><img alt="About us" src="../images/iconosFooter/linkedIn.gif" width="35px" height="35px"></a></button>
+
+            <button class="col-xl-1 btn btn-light mx-5 mb-2 mt-1 ps-3" type="button" title="YouTube"><a class="bg-dark" href="https://www.youtube.com/channel/UC6O0ji13GZ2Lalz98UoCGgA" target="_blank"><img  alt="News" src="../images/iconosFooter/youTube.gif" width="35px" height="35px"></a></button>
+         
+         </form>
+
 	</footer>
 
         <!-- CDN de bootstrap para JS -->

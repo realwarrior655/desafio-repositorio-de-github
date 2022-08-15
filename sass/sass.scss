@@ -16,6 +16,7 @@
        display: online;
  }
  
+ 
  .suscribe , .tapToTop{
       display: flex;
       justify-content: center;
@@ -24,6 +25,7 @@
 
  nav{
       background-color: #14213d;
+      border-bottom-color:#fca311;
       div{
             background-color:  #14213d;
       } button a img{
@@ -130,30 +132,15 @@
        font-size: auto;
        display: online;
  }
-     
+
+ nav{
+      background-color: #14213d;
+ 
+
  .suscribe , .tapToTop{
       display: flex;
       justify-content: center;
       width: auto;
- }
-     
-     
- nav{
-      background-color: #14213d;
-      div{
-            background-color:  #14213d;
-      }
-       button{
-            display: flex;
-            align-items: center;
-       }
-        a{
-            background-color: transparent;
-            
-       } 
-       img{
-            background-color: transparent;
-             }
  }
  
  div form , article{
@@ -206,4 +193,5 @@
  
  }
  }
+}
  /* pense que iba a necesitar una mediaquery mas, pero vi que me quedo bien con dos columnas, me parecio innecesario agregarla */
