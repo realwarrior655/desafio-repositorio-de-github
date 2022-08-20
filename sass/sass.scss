@@ -12,7 +12,7 @@
        text-align: center;
        text-shadow: 3px 3px 10px #1f2788;
        font-size: 2rem;
-       color: #2b2d42;
+
        display: online;
  }
  
@@ -61,13 +61,14 @@
       }
      
  .formulario{
-       margin: 20px 0;
-       border: 3px solid #2b2d42;
-       background-color: #2a9d8f;
-       box-shadow: 5px 3px 10px #2b2d42;
+      margin: 20px -5px;
+      border: 3px solid #fca311;
+      background-color: #14213d;
+      box-shadow: 5px 3px 10px #2b2d42;
       }
  
  label{ 
+      color: #fca311;
        margin: 10px;
        font-size: 20px;
        background-color: transparent;
@@ -90,7 +91,7 @@
  .articulo1{
        grid-area: mainArticle;
  }
- articulo2{
+ .articulo2{
        grid-area:optativeArticle;
  }
  body div{
@@ -103,6 +104,7 @@
  footer{
        grid-area: footer;
  }
+
  body{align-content: center;
        display: grid;
        grid-template-columns: 100%;
@@ -126,7 +128,7 @@
  
  .titles{
        color: #fca311;
-       text-align:start;
+       text-align:center;
        padding: 2rem 0;
        text-shadow: 3px 3px 10px #1f2788;
        font-size: auto;
@@ -134,7 +136,7 @@
  }
 
  nav{
-      background-color: #14213d;
+      background-color: #14213d;}
  
 
  .suscribe , .tapToTop{
@@ -148,6 +150,7 @@
        text-align: center;}
      
  .parrafe{
+      text-align: center;
        color: #e5e5e5;
        margin: 20px 30px;
        padding: 15px;
@@ -155,8 +158,20 @@
        border: 3px solid #fca311;
        box-shadow: 5px 3px 10px #2b2d42;
  }
+
+ .parrafe img{
+      box-sizing:content-box;
+      margin: 10px;
+      padding: 1rem;
+      border: 3px solid #fca311;
+ }
+
+ .articulo2.parrafe{
+      text-align: end;
+ }
+
          
- .formulario{
+.formulario{
        margin: 20px -5px;
        border: 3px solid #fca311;
        background-color: #14213d;
@@ -193,5 +208,5 @@
  
  }
  }
-}
+
  /* pense que iba a necesitar una mediaquery mas, pero vi que me quedo bien con dos columnas, me parecio innecesario agregarla */

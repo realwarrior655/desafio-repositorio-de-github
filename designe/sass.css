@@ -12,7 +12,6 @@
   text-align: center;
   text-shadow: 3px 3px 10px #1f2788;
   font-size: 2rem;
-  color: #2b2d42;
   display: online;
 }
 
@@ -24,6 +23,7 @@
 
 nav {
   background-color: #14213d;
+  border-bottom-color: #fca311;
 }
 nav div {
   background-color: #14213d;
@@ -57,13 +57,14 @@ div form, article {
 }
 
 .formulario {
-  margin: 20px 0;
-  border: 3px solid #2b2d42;
-  background-color: #2a9d8f;
+  margin: 20px -5px;
+  border: 3px solid #fca311;
+  background-color: #14213d;
   box-shadow: 5px 3px 10px #2b2d42;
 }
 
 label {
+  color: #fca311;
   margin: 10px;
   font-size: 20px;
   background-color: transparent;
@@ -88,7 +89,7 @@ header {
   grid-area: mainArticle;
 }
 
-articulo2 {
+.articulo2 {
   grid-area: optativeArticle;
 }
 
@@ -118,44 +119,41 @@ body {
   /* -----------box-modeling tablet---------------------- */
   .titles {
     color: #fca311;
-    text-align: start;
+    text-align: center;
     padding: 2rem 0;
     text-shadow: 3px 3px 10px #1f2788;
     font-size: auto;
     display: online;
+  }
+  nav {
+    background-color: #14213d;
   }
   .suscribe, .tapToTop {
     display: flex;
     justify-content: center;
     width: auto;
   }
-  nav {
-    background-color: #14213d;
-  }
-  nav div {
-    background-color: #14213d;
-  }
-  nav button {
-    display: flex;
-    align-items: center;
-  }
-  nav a {
-    background-color: transparent;
-  }
-  nav img {
-    background-color: transparent;
-  }
   div form, article {
     width: 100%;
     text-align: center;
   }
   .parrafe {
+    text-align: center;
     color: #e5e5e5;
     margin: 20px 30px;
     padding: 15px;
     background-color: #14213d;
     border: 3px solid #fca311;
     box-shadow: 5px 3px 10px #2b2d42;
+  }
+  .parrafe img {
+    box-sizing: content-box;
+    margin: 10px;
+    padding: 1rem;
+    border: 3px solid #fca311;
+  }
+  .articulo2.parrafe {
+    text-align: end;
   }
   .formulario {
     margin: 20px -5px;
