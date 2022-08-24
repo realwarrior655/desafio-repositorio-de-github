@@ -7,20 +7,7 @@
 }
 
 /* ---------------------- box modeling --------------------*/
-.titles {
-  color: #fca311;
-  text-align: center;
-  text-shadow: 3px 3px 10px #1f2788;
-  font-size: 2rem;
-  display: online;
-}
-
-.suscribe, .tapToTop {
-  display: flex;
-  justify-content: center;
-  width: auto;
-}
-
+/*------------------------imports-------------------------*/
 nav {
   background-color: #14213d;
   border-bottom-color: #fca311;
@@ -37,14 +24,22 @@ nav button a img {
   width: 2rem;
 }
 
-img {
-  background-color: transparent;
-}
-
-div form, article {
-  margin: 0;
-  width: 100%;
+.titles {
+  color: #fca311;
   text-align: center;
+  text-shadow: 3px 3px 10px #1f2788;
+  font-size: 2rem;
+  display: online;
+}
+@media (min-width: 600px) {
+  .titles .titles {
+    color: #fca311;
+    text-align: center;
+    padding: 2rem 0;
+    text-shadow: 3px 3px 10px #1f2788;
+    font-size: auto;
+    display: online;
+  }
 }
 
 .parrafe {
@@ -55,6 +50,23 @@ div form, article {
   border: 3px solid #fca311;
   box-shadow: 5px 3px 10px #2b2d42;
 }
+@media (min-width: 600px) {
+  .parrafe .parrafe {
+    text-align: center;
+    color: #e5e5e5;
+    margin: 20px 30px;
+    padding: 15px;
+    background-color: #14213d;
+    border: 3px solid #fca311;
+    box-shadow: 5px 3px 10px #2b2d42;
+  }
+  .parrafe .parrafe img {
+    box-sizing: content-box;
+    margin: 10px;
+    padding: 1rem;
+    border: 3px solid #fca311;
+  }
+}
 
 .formulario {
   margin: 20px -5px;
@@ -62,12 +74,28 @@ div form, article {
   background-color: #14213d;
   box-shadow: 5px 3px 10px #2b2d42;
 }
-
-label {
+.formulario label {
   color: #fca311;
   margin: 10px;
   font-size: 20px;
   background-color: transparent;
+}
+
+/*------------------estilos de la pagina----------------*/
+.suscribe, .tapToTop {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+img {
+  background-color: transparent;
+}
+
+div form, article {
+  margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .footer {
@@ -117,17 +145,6 @@ body {
 /* -------------------- media query para tablet-------------------- */
 @media (min-width: 600px) {
   /* -----------box-modeling tablet---------------------- */
-  .titles {
-    color: #fca311;
-    text-align: center;
-    padding: 2rem 0;
-    text-shadow: 3px 3px 10px #1f2788;
-    font-size: auto;
-    display: online;
-  }
-  nav {
-    background-color: #14213d;
-  }
   .suscribe, .tapToTop {
     display: flex;
     justify-content: center;
@@ -136,36 +153,6 @@ body {
   div form, article {
     width: 100%;
     text-align: center;
-  }
-  .parrafe {
-    text-align: center;
-    color: #e5e5e5;
-    margin: 20px 30px;
-    padding: 15px;
-    background-color: #14213d;
-    border: 3px solid #fca311;
-    box-shadow: 5px 3px 10px #2b2d42;
-  }
-  .parrafe img {
-    box-sizing: content-box;
-    margin: 10px;
-    padding: 1rem;
-    border: 3px solid #fca311;
-  }
-  .articulo2.parrafe {
-    text-align: end;
-  }
-  .formulario {
-    margin: 20px -5px;
-    border: 3px solid #fca311;
-    background-color: #14213d;
-    box-shadow: 5px 3px 10px #2b2d42;
-  }
-  label {
-    color: #fca311;
-    margin: 10px;
-    font-size: 20px;
-    background-color: transparent;
   }
   .footer {
     color: #2b2d42;

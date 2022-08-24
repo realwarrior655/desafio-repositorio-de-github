@@ -6,15 +6,18 @@
     box-sizing: border-box;} 
  
  /* ---------------------- box modeling --------------------*/
- 
- .titles{
-       color: #fca311;
-       text-align: center;
-       text-shadow: 3px 3px 10px #1f2788;
-       font-size: 2rem;
 
-       display: online;
- }
+ /*------------------------imports-------------------------*/
+
+
+ @import "variables";
+ @import "navbar";
+ @import"textos";
+ @import "formulario";
+
+
+ /*------------------estilos de la pagina----------------*/
+
  
  
  .suscribe , .tapToTop{
@@ -22,28 +25,10 @@
       justify-content: center;
       width: auto;
  }
-
- nav{
-      background-color: #14213d;
-      border-bottom-color:#fca311;
-      div{
-            background-color:  #14213d;
-      } button a img{
-            background-color: transparent;
-             display: flex;
-             justify-content: center;
-             flex-direction: row;
-             flex-wrap: nowrap;
-             width:2rem;
-             }
- }
  
  img{
        background-color: transparent;
       }
- 
- 
- 
  
  div form , article{
        margin: 0;
@@ -51,32 +36,9 @@
        text-align: center;
  }
  
- .parrafe{
-       color: #e5e5e5;
-       margin: 10px 10px;
-       padding: 15px;
-       background-color:  #14213d;
-       border: 3px solid #fca311;
-       box-shadow: 5px 3px 10px #2b2d42;
-      }
-     
- .formulario{
-      margin: 20px -5px;
-      border: 3px solid #fca311;
-      background-color: #14213d;
-      box-shadow: 5px 3px 10px #2b2d42;
-      }
- 
- label{ 
-      color: #fca311;
-       margin: 10px;
-       font-size: 20px;
-       background-color: transparent;
-      }
- 
  .footer{
-       color: #2b2d42;
-       background-color: #14213d;
+       color: $sombragris;
+       background-color: $azulmarino;
        padding-top: 20px;
       }
  
@@ -125,19 +87,6 @@
  @media (min-width: 600px) {
  
   /* -----------box-modeling tablet---------------------- */
- 
- .titles{
-       color: #fca311;
-       text-align:center;
-       padding: 2rem 0;
-       text-shadow: 3px 3px 10px #1f2788;
-       font-size: auto;
-       display: online;
- }
-
- nav{
-      background-color: #14213d;}
- 
 
  .suscribe , .tapToTop{
       display: flex;
@@ -149,45 +98,9 @@
        width: 100%;
        text-align: center;}
      
- .parrafe{
-      text-align: center;
-       color: #e5e5e5;
-       margin: 20px 30px;
-       padding: 15px;
-       background-color: #14213d;
-       border: 3px solid #fca311;
-       box-shadow: 5px 3px 10px #2b2d42;
- }
-
- .parrafe img{
-      box-sizing:content-box;
-      margin: 10px;
-      padding: 1rem;
-      border: 3px solid #fca311;
- }
-
- .articulo2.parrafe{
-      text-align: end;
- }
-
-         
-.formulario{
-       margin: 20px -5px;
-       border: 3px solid #fca311;
-       background-color: #14213d;
-       box-shadow: 5px 3px 10px #2b2d42;
- }
-     
- label{ 
-      color: #fca311;
-       margin: 10px;
-       font-size: 20px;
-       background-color: transparent;
- }
-     
  .footer{
-      color: #2b2d42;
-      background-color: #14213d;
+      color: $sombragris;
+      background-color: $azulmarino;
       padding-top: 20px;
  } 
  

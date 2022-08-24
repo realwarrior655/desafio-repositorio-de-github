@@ -1,0 +1,14 @@
+nav{
+    background-color: $azulmarino;
+    border-bottom-color: $amarillo;
+    div{
+          background-color: $azulmarino;
+    } button a img{
+          background-color: transparent;
+           display: flex;
+           justify-content: center;
+           flex-direction: row;
+           flex-wrap: nowrap;
+           width:2rem;
+           }
+}
