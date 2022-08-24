@@ -167,5 +167,4 @@ body {
     gap: 1rem;
     grid-template-areas: "header         header" "suscribeButton suscribeButton " "mainArticle    optativeArticle" "bodyDiv        bodyDiv" "toTopButton    toTopButton" "footer         footer";
   }
-}
-/* pense que iba a necesitar una mediaquery mas, pero vi que me quedo bien con dos columnas, me parecio innecesario agregarla *//*# sourceMappingURL=sass.css.map */
+}/*# sourceMappingURL=sass.css.map */
