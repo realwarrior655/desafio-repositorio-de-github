@@ -13,17 +13,72 @@ nav {
   border-bottom-color: #fca311;
 }
 nav div {
+  display: flex;
   background-color: #14213d;
 }
-nav button a img {
-  background-color: transparent;
+nav button {
+  box-sizing: content-box;
+  width: 40px;
+}
+nav span {
+  color: #000;
+  list-style: none;
+  font-size: 1rem;
+  position: absolute;
+  top: 30%;
+  transition: 0.5s;
+  visibility: hidden;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+nav a {
+  background: transparent;
+}
+nav img {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 2rem;
+  background-color: transparent;
 }
 
+@media (min-width: 600px) {
+  nav {
+    background-color: #14213d;
+    border-bottom-color: #fca311;
+  }
+  nav div {
+    display: flex;
+    background-color: #14213d;
+  }
+  nav button {
+    box-sizing: content-box;
+    width: 40px;
+  }
+  nav button:hover {
+    transition: 0.5s;
+    width: 135px;
+  }
+  nav button:hover span {
+    visibility: visible;
+  }
+  nav a {
+    background: transparent;
+  }
+  nav img {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 2rem;
+  }
+  nav span {
+    color: #000;
+    list-style: none;
+    font-size: 1rem;
+    position: absolute;
+    top: 30%;
+    transition: 0.5s;
+    visibility: hidden;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
 .titles {
   color: #fca311;
   text-align: center;
@@ -45,17 +100,23 @@ nav button a img {
 .parrafe {
   text-align: center;
   color: #e5e5e5;
-  margin: 10px 10px;
+  margin: 15px;
   padding: 15px;
   background-color: #14213d;
   border: 3px solid #fca311;
   box-shadow: 5px 3px 10px #2b2d42;
 }
+.parrafe img {
+  box-sizing: content-box;
+  margin: 10px;
+  padding: 1rem;
+  border: 3px solid #fca311;
+}
 @media (min-width: 600px) {
   .parrafe .parrafe {
     text-align: center;
     color: #e5e5e5;
-    margin: 20px 30px;
+    margin: 5px 10px;
     padding: 15px;
     background-color: #14213d;
     border: 3px solid #fca311;
@@ -70,7 +131,8 @@ nav button a img {
 }
 
 .formulario {
-  margin: 20px -5px;
+  width: 95vw;
+  margin: 20px;
   border: 3px solid #fca311;
   background-color: #14213d;
   box-shadow: 5px 3px 10px #2b2d42;
@@ -83,6 +145,10 @@ nav button a img {
 }
 
 /*------------------estilos de la pagina----------------*/
+body {
+  overflow-x: hidden;
+}
+
 .suscribe, .tapToTop {
   display: flex;
   justify-content: center;
@@ -100,6 +166,7 @@ div form, article {
 }
 
 .footer {
+  width: 100vw;
   color: #2b2d42;
   background-color: #14213d;
   padding-top: 20px;
@@ -156,6 +223,7 @@ body {
     text-align: center;
   }
   .footer {
+    width: 100vw;
     color: #2b2d42;
     background-color: #14213d;
     padding-top: 20px;

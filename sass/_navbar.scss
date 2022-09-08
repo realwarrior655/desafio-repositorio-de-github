@@ -1,14 +1,81 @@
-nav{
-    background-color: $azulmarino;
-    border-bottom-color: $amarillo;
-    div{
-          background-color: $azulmarino;
-    } button a img{
+
+nav{  
+      background-color: $azulmarino;
+      border-bottom-color: $amarillo;
+      
+      div{
+            
+            display: flex;
+            background-color: $azulmarino;
+      } 
+
+      button{
+        box-sizing: content-box;
+        width: 40px;}
+
+        span{
+            color: #000;
+            list-style: none;
+            font-size: 1rem;
+            position: absolute;
+            top: 30%;
+            transition: .5s;
+            visibility: hidden;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+           }
+           a{
+            background: transparent;
+          } 
+              img{
+                  display: flex;
+                  background-color: transparent;}
+      }
+
+
+
+
+@media (min-width: 600px) {
+      
+      nav{
+           background-color: $azulmarino;
+           border-bottom-color: $amarillo;
+
+             div{ display: flex;
+                  background-color: $azulmarino;
+    } 
+
+    button{
+      box-sizing: content-box;
+      width: 40px;
+      &:hover{
+            transition: .5s;
+            width: 135px;
+             span{
+                 visibility: visible;
+                 }
+      }
+    } 
+    a{
+      background: transparent;
+    } 
+        img{
           background-color: transparent;
-           display: flex;
-           justify-content: center;
+          display: flex;
+           
            flex-direction: row;
            flex-wrap: nowrap;
            width:2rem;
            }
+
+           span{
+            color: #000;
+            list-style: none;
+            font-size: 1rem;
+            position: absolute;
+            top: 30%;
+            transition: .5s;
+            visibility: hidden;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+           }
+      }
 }
